@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "medclimate"
+version = "0.1.0"
+description = ""
+authors = ["Necromenta <andrezcar1998@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.3"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+pandas = "^2.2.3"
+polars = "^1.11.0"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+scikit-learn = "^1.5.2"
+python-dotenv = "^1.0.1"
+httpx = "^0.27.2"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.0"
+psycopg2 = "^2.9.10"
+sodapy = "^2.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
